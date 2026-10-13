@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e2f;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 45px;
+}
+
+#status {
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+#game {
+    width: 330px;
+    height: 330px;
+
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.cell {
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 60px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.cell:hover {
+    transform: scale(1.05);
+}
+
+button {
+    margin-top: 30px;
+
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.scoreboard div {
+    text-align: center;
+}
+
+.scoreboard h3 {
+    font-size: 18px;
+}
+
+.scoreboard p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.cell.x {
+    color: #ff4d6d;
+}
+
+.cell.o {
+    color: #4dabf7;
+}
